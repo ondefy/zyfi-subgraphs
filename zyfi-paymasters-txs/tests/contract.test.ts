@@ -8,8 +8,8 @@ import {
 } from "matchstick-as/assembly/index"
 import { Address, BigInt, Bytes } from "@graphprotocol/graph-ts"
 import { Mint } from "../generated/schema"
-import { Mint as MintEvent } from "../generated/Contract/Contract"
-import { handleMint } from "../src/contract"
+import { Mint as MintEvent } from "../generated/L2EthToken/L2EthToken"
+import { handleMint } from "../src/L2EthToken"
 import { createMintEvent } from "./contract-utils"
 
 // Tests structure (matchstick-as >=0.5.0)

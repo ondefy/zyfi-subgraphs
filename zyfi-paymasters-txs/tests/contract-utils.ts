@@ -5,7 +5,7 @@ import {
   Transfer,
   Withdrawal,
   WithdrawalWithMessage
-} from "../generated/Contract/Contract"
+} from "../generated/L2EthToken/L2EthToken"
 
 export function createMintEvent(account: Address, amount: BigInt): Mint {
   let mintEvent = changetype<Mint>(newMockEvent())

@@ -1,6 +1,6 @@
 {
   "zksync-era": {
-    "Contract": {
+    "L2EthToken": {
       "address": "0x000000000000000000000000000000000000800A",
       "startBlock": 28679967
     }
