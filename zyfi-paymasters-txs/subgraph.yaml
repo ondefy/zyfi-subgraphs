@@ -8,7 +8,8 @@ dataSources:
     source:
       address: "0x000000000000000000000000000000000000800A"
       abi: L2EthToken
-      startBlock: 28679967 # https://explorer.zksync.io/tx/0xe4c0ffb3ab0df41da0a69e00c414cd0ff886c5b1577757bfa009c584dc72bb87
+      # startBlock for the first Zyfi Paymaster's deployment
+      startBlock: 16569833 # https://explorer.zksync.io/tx/0x299e703584722cf5fc8109744d110f221669cfbcb4900451affd4efff3b5b45d
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
