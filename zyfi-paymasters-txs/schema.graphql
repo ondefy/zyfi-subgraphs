@@ -1,4 +1,4 @@
-type PaymasterTransaction @entity(immutable: false) {
+type PaymasterTransaction @entity(immutable: true) {
   id: Bytes! # transactionHash
   from: Bytes! # address
   to: Bytes! # address

@@ -2,6 +2,7 @@ specVersion: 0.0.5
 schema:
   file: ./schema.graphql
 dataSources:
+
   - kind: ethereum
     name: L2EthToken
     network: zksync-era
@@ -15,20 +16,12 @@ dataSources:
       apiVersion: 0.0.7
       language: wasm/assemblyscript
       entities:
-        - Mint
         - Transfer
-        - Withdrawal
-        - WithdrawalWithMessage
       abis:
         - name: L2EthToken
           file: ./abis/L2EthToken.json
       eventHandlers:
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-        # - event: Mint(indexed address,uint256)
-        #   handler: handleMint
-        # - event: Withdrawal(indexed address,indexed address,uint256)
-        #   handler: handleWithdrawal
-        # - event: WithdrawalWithMessage(indexed address,indexed address,uint256,bytes)
-        #   handler: handleWithdrawalWithMessage
       file: ./src/L2EthToken.ts
+
