@@ -1,13 +1,12 @@
-specVersion: 0.0.5
+specVersion: 1.1.0
 schema:
   file: ./schema.graphql
 dataSources:
-
   - kind: ethereum
     name: L2EthToken
     network: zksync-era
     source:
-      address: "0x000000000000000000000000000000000000800A"
+      address: '0x000000000000000000000000000000000000800A'
       abi: L2EthToken
       # startBlock for the first Zyfi Paymaster's deployment
       startBlock: 16569833 # https://explorer.zksync.io/tx/0x299e703584722cf5fc8109744d110f221669cfbcb4900451affd4efff3b5b45d
@@ -24,4 +23,3 @@ dataSources:
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
       file: ./src/L2EthToken.ts
-
